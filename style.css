@@ -165,6 +165,10 @@ body {
   border: 3px solid #aae7ff;
   object-fit: cover;
   transition: transform 0.2s ease;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* =========================
