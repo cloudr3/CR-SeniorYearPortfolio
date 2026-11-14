@@ -159,16 +159,45 @@ body {
    ABOUT ME PICTURES
 ========================= */
 
+.besties-pic {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .besties-pic img {
-  width: 428px;
-  height: 425px;
+  width: 100%;
+  max-width: 428px;
+  height: auto;
+  max-height: 425px;
   border: 3px solid #aae7ff;
   object-fit: cover;
-  transition: transform 0.2s ease;
-  float: left;
+  border-radius: 8px;
+}
+
+.besties-text {
+  flex: 1;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+@media (max-width: 700px) {
+  .resource-card:has(.besties-pic){
+    flex-direction: column;
+  }
+
+  .besties-pic {
+    width: 100%;
+  }
+
+  .besties-pic img {
+    max-width: 100%;
+  }
 }
 
 /* =========================
