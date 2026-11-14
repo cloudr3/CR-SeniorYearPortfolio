@@ -212,13 +212,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 1em;
+  width: 100%;
 }
 
 .hobbies-pic img {
   width: 428px;
   height: 318px;
-  flex-shrink: 0;
+  flex: 0 0 428px;
   border: 3px solid #aae7ff;
   border-radius: 8px;
   object-fit: cover;
