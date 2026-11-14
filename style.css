@@ -207,15 +207,18 @@ body {
 }
 
 .hobbies-pic {
-  flex: 0 0 40%;
+  flex: 0 0 65%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
 }
 
 .hobbies-pic img {
   width: 428px;
   height: 318px;
+  flex-shrink: 0;
   border: 3px solid #aae7ff;
   border-radius: 8px;
   object-fit: cover;
