@@ -200,6 +200,43 @@ body {
   }
 }
 
+.hobbies-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.hobbies-pic {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hobbies-pic img {
+  width: 428px;
+  height: 318px;
+  border: 3px solid #aae7ff;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.hobbies-text {
+  flex: 1;
+}
+
+.hobbies-card {
+  flex-direction: column;
+}
+
+.hobbies-pic {
+  width: 100%;
+}
+
+.hobbies-pic img {
+  max-width:100%;
+}
+
 /* =========================
    PROJECT LAYOUT
 ========================= */
